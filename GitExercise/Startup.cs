@@ -49,7 +49,18 @@ namespace GitExercise
                 case "sabs":
                     OptionsManager.SubtractAbs(a, b);
                     break;
+                case "pow":
+                    OptionsManager.Power(a, b);
+                    break;
+                case "log":
+                    OptionsManager.Log(a, b);
+                    break;
+                case "fact":
+                    OptionsManager.Factorial(a, b);
+                    break;
             }
+
+
 
             Console.WriteLine("Pres any key to close the app...");
             Console.ReadKey(true);
@@ -63,5 +74,7 @@ namespace GitExercise
             return password == Password;
         }
         private const string Password = "abcd1234";
+
+
     }
 }
