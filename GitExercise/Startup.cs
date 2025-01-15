@@ -49,6 +49,9 @@ namespace GitExercise
                 case "sabs":
                     OptionsManager.SubtractAbs(a, b);
                     break;
+                case "dr":
+                    OptionsManager.DevideRemainder(a, b);
+                    break;
                 case "pow":
                     OptionsManager.Power(a, b);
                     break;
@@ -58,6 +61,11 @@ namespace GitExercise
                 case "fact":
                     OptionsManager.Factorial(a, b);
                     break;
+                case "ex":
+                    Console.Clear();
+                    Console.WriteLine("Goodbye!");
+                    Console.ReadKey(intercept: true);
+                    return;
             }
 
 
